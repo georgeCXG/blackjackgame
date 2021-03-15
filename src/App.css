@@ -1,0 +1,271 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-board {
+  background: rgb(158, 255, 118);
+  background: linear-gradient(
+    153deg,
+    rgb(89, 134, 70) 0%,
+    rgb(52, 83, 42) 100%
+  );
+  height: 100vh;
+  width: 100%;
+}
+
+.container-board hr {
+  border: 1px solid rgba(220, 220, 220, 0.308);
+}
+
+.board-player1 {
+  height: 40vh;
+}
+
+.player1-outputs {
+  display: flex;
+  justify-content: center;
+}
+
+.player1-outputs h2 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  justify-content: flex-start;
+  display: flex;
+  padding-left: 50px;
+  width: 30%;
+}
+
+.player1-outputs h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+  width: 40%;
+}
+
+.player1-outputs h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 30%;
+}
+
+.player1-pack {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.board-player2 {
+  height: 40vh;
+}
+
+.board-player2 h1 {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 10px;
+  color: white;
+}
+
+.player2-pack {
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.container-stats {
+  background-color: rgb(36, 36, 36);
+  height: 20vh;
+}
+
+.player1-pack img,
+.player2-pack img {
+  height: 25vh;
+}
+
+.container-stats h1 {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.stats-display {
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;
+  gap: 20px;
+}
+
+.stats-display button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(155, 95, 39);
+  color: white;
+  width: 10%;
+  text-align: center;
+  justify-items: center;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+.stats-display .deal {
+  background-color: rgb(58, 58, 247);
+}
+
+.stats-display .deal:hover {
+  background-color: rgba(58, 58, 247, 0.753);
+}
+
+.stats-display button:hover {
+  background-color: rgba(231, 98, 98, 0.712);
+}
+
+.place1-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.place1-container h2 {
+  color: white;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 20px;
+}
+
+.sections button {
+  width: 100%;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-replay {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-replay .replay-btn {
+  background-color: rgb(122, 61, 146);
+}
+
+.container-replay .replay-btn:hover {
+  background-color: rgba(122, 61, 146, 0.521);
+}
+
+.container-user {
+  background: rgb(28, 51, 48);
+  background: linear-gradient(
+    153deg,
+    rgba(34, 79, 73, 1) 0%,
+    rgb(42, 78, 71) 100%
+  );
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 100px;
+}
+
+.container-user h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.user-form {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+.user-form input[type="text"] {
+  width: 20%;
+  padding: 15px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+.user-form input[type="submit"] {
+  outline: none;
+  width: 7%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .container-user h1 {
+    font-size: 30px;
+  }
+
+  .user-form input[type="text"] {
+    width: 45%;
+    padding: 10px;
+  }
+
+  .user-form input[type="submit"] {
+    width: 20%;
+  }
+
+  .player1-outputs h1,
+  .player1-outputs h3,
+  .player1-outputs h2,
+  .board-player2 h1 {
+    font-size: 14px;
+  }
+
+  .player2-pack,
+  .player1-pack {
+    gap: 5px;
+  }
+
+  .player1-pack img,
+  .player2-pack img {
+    height: 15vh;
+  }
+
+  .place1-container {
+    justify-content: space-around;
+  }
+
+  .stats-display button {
+    width: 100%;
+  }
+}
