@@ -12,7 +12,7 @@ const UserPick = ({setUserDone,value,setValue,setUser}) => {
 
     const showValue = () =>{
         setUser(value);
-        setUserDone(true);
+        setUserDone(true); 
     }
 
     return (
