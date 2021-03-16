@@ -91,7 +91,7 @@ const Board = ({user}) => {
                 <h1>Dealer : <span>{p2Points}</span></h1>
                 <div className="player2-pack">
                     {outputP2Hand}
-                    {backCardDisplay && <img src="../pack/packback.png" alt="packback"/>}
+                    {backCardDisplay && <img src="./pack/packback.png" alt="packback"/>}
                 </div>
             </div>
             <Stats setMoney={setMoney} money={money} setBackCardDisplay={setBackCardDisplay} displayBtns={displayBtns} setDisplayBtns={setDisplayBtns} p2Hand={p2Hand} setP2Hand={setP2Hand} p2Points={p2Points} setP2Points={setP2Points} p1Points={p1Points} setP1Points={setP1Points} setP1Hand={setP1Hand} p1Hand={p1Hand} deckPack={deckPack}  setDeckPack={setDeckPack}/>
